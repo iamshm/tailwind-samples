@@ -10,6 +10,55 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        leftBall: {
+          "0%": {
+            transform: "translate(-20px, -20px)",
+          },
+          "25%": {
+            transform: "translate(0px)",
+          },
+          "50%": {
+            transform: "translate(0px)",
+          },
+          "75%": {
+            transform: "translate(0px)",
+          },
+          "87.5%": {
+            transform: "translate(-10px, -10px)",
+          },
+          "100%": {
+            transform: "translate(-20px,-20px)",
+          },
+        },
+        rightBall: {
+          "0%": {
+            transform: "translate(0px)",
+          },
+          "25%": {
+            transform: "translate(0px)",
+          },
+          "37.5%": {
+            transform: "translate(10px, -10px)",
+          },
+          "50%": {
+            transform: "translate(20px,-20px)",
+          },
+          "62.5%": {
+            transform: "translate(10px, -10px)",
+          },
+          "75%": {
+            transform: "translate(0px)",
+          },
+          "100%": {
+            transform: "translate(0px)",
+          },
+        },
+      },
+      animation: {
+        leftAnimation: "leftBall 1s linear infinite",
+        rightAnimation: "rightBall 1s linear infinite",
+      },
       colors: {
         gray: {
           900: "#202225",
